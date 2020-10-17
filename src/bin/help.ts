@@ -5,7 +5,7 @@ const miscord = chalk.green('miscord')
 
 export default `${chalk.green(`Miscord v${require('../../package.json').version}`)}
 
-Usage: ${miscord}
+Usage (repl.it): ${miscord}
   ${args}
 
 Example:
