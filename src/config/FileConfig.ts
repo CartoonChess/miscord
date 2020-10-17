@@ -80,7 +80,8 @@ export default class FileConfig extends Config {
   saveSession (session: Session) { return fs.writeJSON(this.sessionPath, session) }
 }
 export function getConfigDir () {
-  if (isDocker()) return '/config'
+  //if (isDocker()) return '/config'
+  if (isDocker()) return '/home/runner/config'
   switch (process.platform) {
     case 'win32':
       return path.join(process.env.APPDATA!!, 'Miscord')
